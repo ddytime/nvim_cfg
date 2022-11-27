@@ -41,13 +41,17 @@ packer.init({
 -- Install your plugins here
 return packer.startup(function(use)
 --  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08" }
-
+  -- pakcers
   use { "wbthomason/packer.nvim" }
+
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "ellisonleao/gruvbox.nvim" }
 
+  -- file explore
+  use { "nvim-tree/nvim-web-devicons" }
+  use { "nvim-tree/nvim-tree.lua" }
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
